@@ -1,6 +1,7 @@
 ---
 - name: config | Configuring InfluxDB
   template:
+    backup: true
     src: etc/influxdb/influxdb.conf.j2
     dest: /etc/influxdb/influxdb.conf
   become: true
