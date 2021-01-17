@@ -43,12 +43,6 @@ bind-address = "{{ influxdb_rpc_addr }}"
   store-enabled = {{ influxdb_monitor['store_enabled']|lower }}
   store-interval = "{{ influxdb_monitor['store_interval'] }}"
 
-[admin]
-  bind-address = "{{ influxdb_admin['bind_address'] }}:{{ influxdb_admin['bind_port'] }}"
-  enabled = {{ influxdb_admin['enabled']|lower }}
-  https-certificate = "{{ influxdb_admin['https_certificate'] }}"
-  https-enabled = {{ influxdb_admin['https_enabled']|lower }}
-
 [http]
   auth-enabled = {{ influxdb_http['auth_enabled']|lower }}
   bind-address = "{{ influxdb_http['bind_address'] }}:{{ influxdb_http['bind_port'] }}"
