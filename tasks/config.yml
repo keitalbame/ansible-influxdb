@@ -2,8 +2,8 @@
 - name: config | Configuring InfluxDB
   template:
     backup: true
-    src: etc/influxdb/influxdb.conf.j2
-    dest: /etc/influxdb/influxdb.conf
+    src: etc/influxdb/influxdata.conf.j2
+    dest: /etc/influxdb/influxdata.conf
   become: true
   notify:
     - restart influxdb
